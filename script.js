@@ -24,5 +24,8 @@ yellowBox.addEventListener('click',()=>{
     yellowBox.classList.toggle('active');
 });
 greetBtn.addEventListener('click', ()=>{
+    headerText.textContent =","+inputText.value;
+});
     headerText.textContent = ","+inputText.value;
 });
+
