@@ -26,6 +26,4 @@ yellowBox.addEventListener('click',()=>{
 greetBtn.addEventListener('click', ()=>{
     headerText.textContent =","+inputText.value;
 });
-    headerText.textContent = ","+inputText.value;
-});
-
+   
