@@ -23,7 +23,14 @@ yellowBox.addEventListener('click',()=>{
 
     yellowBox.classList.toggle('active');
 });
-greetBtn.addEventListener('click', ()=>{
+/* greetBtn.addEventListener('click', ()=>{
     headerText.textContent =", "+inputText.value;
 });
-   
+    */
+   greetBtn.addEventListener('click', () => {
+    if (inputText.value.trim() === "") {
+        headerText.textContent = "";   
+    } else {
+        headerText.textContent = ", " + inputText.value + "!";
+    }
+});
